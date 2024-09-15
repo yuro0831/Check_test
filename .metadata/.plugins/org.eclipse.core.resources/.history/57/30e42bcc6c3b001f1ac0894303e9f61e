@@ -1,0 +1,16 @@
+package test04;
+
+public class Main {
+    public static void main(String[] args) {
+        //２次元配列の宣言。
+        //変数作成と宣言は1行でまとめることも可能です。
+        int[][] graph = new int[9][9];
+        
+        /*
+         * 九のデータを格納してみる。 「0」始まりに注意
+         */
+        //１の段
+        graph[0][0]=1;
+    }
+
+}

@@ -1,0 +1,27 @@
+package test04;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        /*
+         * パターン１,文字列から値を取得し、LocalDate型に取り込む
+         */
+        
+        String dateStringA = "2024/01/02";
+        //LocalDate.parse("指定したい値,"DateTimeFormatter.ofPattern("処理形式")
+        LocalDate date = LocalDate.parse(dateStringA,DateTimeFormatter.ofPattern("yyyy/MM/dd"));
+        
+        /*
+         * パターン２,DateFormaterの指定を使ってLocalDate型に取り込む
+         */
+        String dateStringB = "20240102";
+        //LocalDate.parse("指定したい値",DateTimeFormatter.ofPattern("処理形式")
+        date = LocalDate.parse(dateStringB,DateTimeFormatter.BASIC_ISO_DATE);
+
+    }
+
+}

@@ -1,0 +1,18 @@
+package test11;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class AccountingSystem {
+    private Map<String, Integer> ledger;
+    
+    public AccountingSystem() {
+        ledger = new HashMap<>();
+    }
+    
+    //帳簿に記載する文字列を判定するメソッド
+    
+
+    }
+
+}
